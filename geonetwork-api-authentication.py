@@ -29,4 +29,4 @@ payload = {}
 url_metadata = "http://localhost:8080/geonetwork/srv/api/0.1/site/index" #This API request resets the index and is used here as an example.
 
 r_metadata = requests.request("PUT", url_metadata, headers=headers, data=payload)
-print("single metadata api status: "+ str(r_metadata))
+print("Server response: "+ str(r_metadata))
